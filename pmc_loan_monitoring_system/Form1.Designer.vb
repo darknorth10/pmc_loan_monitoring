@@ -38,15 +38,17 @@ Partial Class frmmain
         Me.btnexit = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.lbltext = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.pnlmain = New System.Windows.Forms.Panel()
-        Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.Pmc_dbDataSet1 = New pmc_loan_monitoring_system.pmc_dbDataSet()
+        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2GradientPanel1.SuspendLayout()
         CType(Me.Guna2CirclePictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Pmc_dbDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2GradientPanel1
         '
-        Me.Guna2GradientPanel1.Controls.Add(Me.BunifuCustomLabel1)
+        Me.Guna2GradientPanel1.Controls.Add(Me.Guna2Button3)
         Me.Guna2GradientPanel1.Controls.Add(Me.btnlogout)
         Me.Guna2GradientPanel1.Controls.Add(Me.Guna2Button7)
         Me.Guna2GradientPanel1.Controls.Add(Me.Guna2Button6)
@@ -59,7 +61,7 @@ Partial Class frmmain
         Me.Guna2GradientPanel1.Controls.Add(Me.lblusername)
         Me.Guna2GradientPanel1.Controls.Add(Me.Guna2CirclePictureBox2)
         Me.Guna2GradientPanel1.Controls.Add(Me.Guna2CirclePictureBox1)
-        Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.Turquoise
+        Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.MidnightBlue
         Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.LightSeaGreen
         Me.Guna2GradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal
         Me.Guna2GradientPanel1.Location = New System.Drawing.Point(-1, -1)
@@ -75,7 +77,7 @@ Partial Class frmmain
         Me.btnlogout.CustomImages.Parent = Me.btnlogout
         Me.btnlogout.FillColor = System.Drawing.Color.Transparent
         Me.btnlogout.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.btnlogout.ForeColor = System.Drawing.Color.Black
+        Me.btnlogout.ForeColor = System.Drawing.Color.White
         Me.btnlogout.HoverState.Parent = Me.btnlogout
         Me.btnlogout.Image = Global.pmc_loan_monitoring_system.My.Resources.Resources.logout
         Me.btnlogout.Location = New System.Drawing.Point(167, 19)
@@ -92,9 +94,9 @@ Partial Class frmmain
         Me.Guna2Button7.CustomImages.Parent = Me.Guna2Button7
         Me.Guna2Button7.FillColor = System.Drawing.Color.Transparent
         Me.Guna2Button7.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button7.ForeColor = System.Drawing.Color.Black
+        Me.Guna2Button7.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Guna2Button7.HoverState.Parent = Me.Guna2Button7
-        Me.Guna2Button7.Location = New System.Drawing.Point(0, 665)
+        Me.Guna2Button7.Location = New System.Drawing.Point(1, 668)
         Me.Guna2Button7.Name = "Guna2Button7"
         Me.Guna2Button7.PressedColor = System.Drawing.Color.MediumAquamarine
         Me.Guna2Button7.ShadowDecoration.Parent = Me.Guna2Button7
@@ -109,9 +111,9 @@ Partial Class frmmain
         Me.Guna2Button6.CustomImages.Parent = Me.Guna2Button6
         Me.Guna2Button6.FillColor = System.Drawing.Color.Transparent
         Me.Guna2Button6.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button6.ForeColor = System.Drawing.Color.Black
+        Me.Guna2Button6.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Guna2Button6.HoverState.Parent = Me.Guna2Button6
-        Me.Guna2Button6.Location = New System.Drawing.Point(-3, 601)
+        Me.Guna2Button6.Location = New System.Drawing.Point(0, 566)
         Me.Guna2Button6.Name = "Guna2Button6"
         Me.Guna2Button6.PressedColor = System.Drawing.Color.MediumAquamarine
         Me.Guna2Button6.ShadowDecoration.Parent = Me.Guna2Button6
@@ -126,9 +128,9 @@ Partial Class frmmain
         Me.Guna2Button5.CustomImages.Parent = Me.Guna2Button5
         Me.Guna2Button5.FillColor = System.Drawing.Color.Transparent
         Me.Guna2Button5.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button5.ForeColor = System.Drawing.Color.Black
+        Me.Guna2Button5.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Guna2Button5.HoverState.Parent = Me.Guna2Button5
-        Me.Guna2Button5.Location = New System.Drawing.Point(3, 538)
+        Me.Guna2Button5.Location = New System.Drawing.Point(3, 515)
         Me.Guna2Button5.Name = "Guna2Button5"
         Me.Guna2Button5.PressedColor = System.Drawing.Color.MediumAquamarine
         Me.Guna2Button5.ShadowDecoration.Parent = Me.Guna2Button5
@@ -143,9 +145,9 @@ Partial Class frmmain
         Me.Guna2Button4.CustomImages.Parent = Me.Guna2Button4
         Me.Guna2Button4.FillColor = System.Drawing.Color.Transparent
         Me.Guna2Button4.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button4.ForeColor = System.Drawing.Color.Black
+        Me.Guna2Button4.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Guna2Button4.HoverState.Parent = Me.Guna2Button4
-        Me.Guna2Button4.Location = New System.Drawing.Point(1, 475)
+        Me.Guna2Button4.Location = New System.Drawing.Point(0, 464)
         Me.Guna2Button4.Name = "Guna2Button4"
         Me.Guna2Button4.PressedColor = System.Drawing.Color.MediumAquamarine
         Me.Guna2Button4.ShadowDecoration.Parent = Me.Guna2Button4
@@ -160,9 +162,9 @@ Partial Class frmmain
         Me.btntransaction.CustomImages.Parent = Me.btntransaction
         Me.btntransaction.FillColor = System.Drawing.Color.Transparent
         Me.btntransaction.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btntransaction.ForeColor = System.Drawing.Color.Black
+        Me.btntransaction.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.btntransaction.HoverState.Parent = Me.btntransaction
-        Me.btntransaction.Location = New System.Drawing.Point(1, 415)
+        Me.btntransaction.Location = New System.Drawing.Point(-1, 413)
         Me.btntransaction.Name = "btntransaction"
         Me.btntransaction.PressedColor = System.Drawing.Color.MediumAquamarine
         Me.btntransaction.ShadowDecoration.Parent = Me.btntransaction
@@ -177,9 +179,9 @@ Partial Class frmmain
         Me.Guna2Button2.CustomImages.Parent = Me.Guna2Button2
         Me.Guna2Button2.FillColor = System.Drawing.Color.Transparent
         Me.Guna2Button2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button2.ForeColor = System.Drawing.Color.Black
+        Me.Guna2Button2.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Guna2Button2.HoverState.Parent = Me.Guna2Button2
-        Me.Guna2Button2.Location = New System.Drawing.Point(0, 352)
+        Me.Guna2Button2.Location = New System.Drawing.Point(0, 362)
         Me.Guna2Button2.Name = "Guna2Button2"
         Me.Guna2Button2.PressedColor = System.Drawing.Color.MediumAquamarine
         Me.Guna2Button2.ShadowDecoration.Parent = Me.Guna2Button2
@@ -194,9 +196,9 @@ Partial Class frmmain
         Me.Guna2Button1.CustomImages.Parent = Me.Guna2Button1
         Me.Guna2Button1.FillColor = System.Drawing.Color.Transparent
         Me.Guna2Button1.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.Black
+        Me.Guna2Button1.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Location = New System.Drawing.Point(3, 301)
+        Me.Guna2Button1.Location = New System.Drawing.Point(1, 311)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.PressedColor = System.Drawing.Color.MediumAquamarine
         Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
@@ -211,9 +213,9 @@ Partial Class frmmain
         Me.btndashboard.CustomImages.Parent = Me.btndashboard
         Me.btndashboard.FillColor = System.Drawing.Color.Transparent
         Me.btndashboard.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btndashboard.ForeColor = System.Drawing.Color.Black
+        Me.btndashboard.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.btndashboard.HoverState.Parent = Me.btndashboard
-        Me.btndashboard.Location = New System.Drawing.Point(1, 242)
+        Me.btndashboard.Location = New System.Drawing.Point(1, 260)
         Me.btndashboard.Name = "btndashboard"
         Me.btndashboard.PressedColor = System.Drawing.Color.MediumAquamarine
         Me.btndashboard.ShadowDecoration.Parent = Me.btndashboard
@@ -225,11 +227,12 @@ Partial Class frmmain
         '
         Me.lblusername.AutoSize = True
         Me.lblusername.BackColor = System.Drawing.Color.Transparent
-        Me.lblusername.Font = New System.Drawing.Font("Century Gothic", 9.2!, System.Drawing.FontStyle.Bold)
-        Me.lblusername.Location = New System.Drawing.Point(153, 197)
+        Me.lblusername.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblusername.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.lblusername.Location = New System.Drawing.Point(112, 192)
         Me.lblusername.Name = "lblusername"
         Me.lblusername.Padding = New System.Windows.Forms.Padding(5)
-        Me.lblusername.Size = New System.Drawing.Size(71, 29)
+        Me.lblusername.Size = New System.Drawing.Size(62, 27)
         Me.lblusername.TabIndex = 6
         Me.lblusername.Text = "admin"
         Me.lblusername.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -317,18 +320,27 @@ Partial Class frmmain
         Me.pnlmain.Size = New System.Drawing.Size(1228, 754)
         Me.pnlmain.TabIndex = 7
         '
-        'BunifuCustomLabel1
+        'Pmc_dbDataSet1
         '
-        Me.BunifuCustomLabel1.AutoSize = True
-        Me.BunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(22, 198)
-        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
-        Me.BunifuCustomLabel1.Padding = New System.Windows.Forms.Padding(5)
-        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(130, 29)
-        Me.BunifuCustomLabel1.TabIndex = 17
-        Me.BunifuCustomLabel1.Text = "Welcome back!"
-        Me.BunifuCustomLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Pmc_dbDataSet1.DataSetName = "pmc_dbDataSet"
+        Me.Pmc_dbDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'Guna2Button3
+        '
+        Me.Guna2Button3.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Button3.CheckedState.Parent = Me.Guna2Button3
+        Me.Guna2Button3.CustomImages.Parent = Me.Guna2Button3
+        Me.Guna2Button3.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2Button3.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button3.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Guna2Button3.HoverState.Parent = Me.Guna2Button3
+        Me.Guna2Button3.Location = New System.Drawing.Point(1, 617)
+        Me.Guna2Button3.Name = "Guna2Button3"
+        Me.Guna2Button3.PressedColor = System.Drawing.Color.MediumAquamarine
+        Me.Guna2Button3.ShadowDecoration.Parent = Me.Guna2Button3
+        Me.Guna2Button3.Size = New System.Drawing.Size(279, 45)
+        Me.Guna2Button3.TabIndex = 17
+        Me.Guna2Button3.Text = "Printable Forms"
         '
         'frmmain
         '
@@ -348,6 +360,7 @@ Partial Class frmmain
         Me.Guna2GradientPanel1.PerformLayout()
         CType(Me.Guna2CirclePictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Pmc_dbDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -368,6 +381,7 @@ Partial Class frmmain
     Friend WithEvents lbltext As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents pnlmain As System.Windows.Forms.Panel
     Friend WithEvents btnlogout As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents Pmc_dbDataSet1 As pmc_loan_monitoring_system.pmc_dbDataSet
+    Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
 
 End Class

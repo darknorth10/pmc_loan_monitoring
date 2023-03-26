@@ -301,7 +301,7 @@
                 </InsertCommand>
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT id, username, password, status, type, firstname, lastname FROM user_table</CommandText>
+                    <CommandText>SELECT `id`, `username`, `password`, `status`, `type`, `firstname`, `lastname` FROM `user_table`</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -348,7 +348,7 @@
   <xs:element name="pmc_dbDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="pmc_dbDataSet" msprop:Generator_UserDSName="pmc_dbDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="member_table" msprop:Generator_TableClassName="member_tableDataTable" msprop:Generator_TableVarName="tablemember_table" msprop:Generator_RowChangedName="member_tableRowChanged" msprop:Generator_TablePropName="member_table" msprop:Generator_RowDeletingName="member_tableRowDeleting" msprop:Generator_RowChangingName="member_tableRowChanging" msprop:Generator_RowEvHandlerName="member_tableRowChangeEventHandler" msprop:Generator_RowDeletedName="member_tableRowDeleted" msprop:Generator_RowClassName="member_tableRow" msprop:Generator_UserTableName="member_table" msprop:Generator_RowEvArgName="member_tableRowChangeEvent">
+        <xs:element name="member_table" msprop:Generator_TableClassName="member_tableDataTable" msprop:Generator_TableVarName="tablemember_table" msprop:Generator_TablePropName="member_table" msprop:Generator_RowDeletingName="member_tableRowDeleting" msprop:Generator_RowChangingName="member_tableRowChanging" msprop:Generator_RowEvHandlerName="member_tableRowChangeEventHandler" msprop:Generator_RowDeletedName="member_tableRowDeleted" msprop:Generator_UserTableName="member_table" msprop:Generator_RowChangedName="member_tableRowChanged" msprop:Generator_RowEvArgName="member_tableRowChangeEvent" msprop:Generator_RowClassName="member_tableRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -464,7 +464,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="transaction_table" msprop:Generator_TableClassName="transaction_tableDataTable" msprop:Generator_TableVarName="tabletransaction_table" msprop:Generator_RowChangedName="transaction_tableRowChanged" msprop:Generator_TablePropName="transaction_table" msprop:Generator_RowDeletingName="transaction_tableRowDeleting" msprop:Generator_RowChangingName="transaction_tableRowChanging" msprop:Generator_RowEvHandlerName="transaction_tableRowChangeEventHandler" msprop:Generator_RowDeletedName="transaction_tableRowDeleted" msprop:Generator_RowClassName="transaction_tableRow" msprop:Generator_UserTableName="transaction_table" msprop:Generator_RowEvArgName="transaction_tableRowChangeEvent">
+        <xs:element name="transaction_table" msprop:Generator_TableClassName="transaction_tableDataTable" msprop:Generator_TableVarName="tabletransaction_table" msprop:Generator_TablePropName="transaction_table" msprop:Generator_RowDeletingName="transaction_tableRowDeleting" msprop:Generator_RowChangingName="transaction_tableRowChanging" msprop:Generator_RowEvHandlerName="transaction_tableRowChangeEventHandler" msprop:Generator_RowDeletedName="transaction_tableRowDeleted" msprop:Generator_UserTableName="transaction_table" msprop:Generator_RowChangedName="transaction_tableRowChanged" msprop:Generator_RowEvArgName="transaction_tableRowChangeEvent" msprop:Generator_RowClassName="transaction_tableRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="transaction_id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columntransaction_id" msprop:Generator_ColumnPropNameInRow="transaction_id" msprop:Generator_ColumnPropNameInTable="transaction_idColumn" msprop:Generator_UserColumnName="transaction_id" type="xs:int" />
@@ -516,7 +516,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="user_table" msprop:Generator_TableClassName="user_tableDataTable" msprop:Generator_TableVarName="tableuser_table" msprop:Generator_RowChangedName="user_tableRowChanged" msprop:Generator_TablePropName="user_table" msprop:Generator_RowDeletingName="user_tableRowDeleting" msprop:Generator_RowChangingName="user_tableRowChanging" msprop:Generator_RowEvHandlerName="user_tableRowChangeEventHandler" msprop:Generator_RowDeletedName="user_tableRowDeleted" msprop:Generator_RowClassName="user_tableRow" msprop:Generator_UserTableName="user_table" msprop:Generator_RowEvArgName="user_tableRowChangeEvent">
+        <xs:element name="user_table" msprop:Generator_TableClassName="user_tableDataTable" msprop:Generator_TableVarName="tableuser_table" msprop:Generator_TablePropName="user_table" msprop:Generator_RowDeletingName="user_tableRowDeleting" msprop:Generator_RowChangingName="user_tableRowChanging" msprop:Generator_RowEvHandlerName="user_tableRowChangeEventHandler" msprop:Generator_RowDeletedName="user_tableRowDeleted" msprop:Generator_UserTableName="user_table" msprop:Generator_RowChangedName="user_tableRowChanged" msprop:Generator_RowEvArgName="user_tableRowChangeEvent" msprop:Generator_RowClassName="user_tableRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -551,14 +551,14 @@
               <xs:element name="firstname" msprop:Generator_ColumnVarNameInTable="columnfirstname" msprop:Generator_ColumnPropNameInRow="firstname" msprop:Generator_ColumnPropNameInTable="firstnameColumn" msprop:Generator_UserColumnName="firstname" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
-                    <xs:maxLength value="45" />
+                    <xs:maxLength value="65" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
               <xs:element name="lastname" msprop:Generator_ColumnVarNameInTable="columnlastname" msprop:Generator_ColumnPropNameInRow="lastname" msprop:Generator_ColumnPropNameInTable="lastnameColumn" msprop:Generator_UserColumnName="lastname" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
-                    <xs:maxLength value="45" />
+                    <xs:maxLength value="65" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
@@ -582,7 +582,7 @@
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="memberid" msdata:parent="member_table" msdata:child="transaction_table" msdata:parentkey="id" msdata:childkey="member_id" msprop:Generator_UserChildTable="transaction_table" msprop:Generator_ChildPropName="Gettransaction_tableRows" msprop:Generator_UserRelationName="memberid" msprop:Generator_RelationVarName="relationmemberid" msprop:Generator_UserParentTable="member_table" msprop:Generator_ParentPropName="member_tableRow" />
+      <msdata:Relationship name="memberid" msdata:parent="member_table" msdata:child="transaction_table" msdata:parentkey="id" msdata:childkey="member_id" msprop:Generator_UserChildTable="transaction_table" msprop:Generator_ChildPropName="Gettransaction_tableRows" msprop:Generator_UserRelationName="memberid" msprop:Generator_ParentPropName="member_tableRow" msprop:Generator_RelationVarName="relationmemberid" msprop:Generator_UserParentTable="member_table" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

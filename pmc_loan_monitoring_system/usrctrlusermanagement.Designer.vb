@@ -23,11 +23,10 @@ Partial Class usrctrlusermanagement
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.cbostatus = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -49,8 +48,9 @@ Partial Class usrctrlusermanagement
         Me.txtfn = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtln = New System.Windows.Forms.TextBox()
-        Me.Pmc_dbDataSet1 = New pmc_loan_monitoring_system.pmc_dbDataSet()
-        Me.dgusers = New Bunifu.Framework.UI.BunifuCustomDataGrid()
+        Me.btnchange = New Guna.UI2.WinForms.Guna2Button()
+        Me.lbluserid = New System.Windows.Forms.Label()
+        Me.dgusers = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.IdDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FirstnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.LastnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -59,13 +59,12 @@ Partial Class usrctrlusermanagement
         Me.StatusDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TypeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.UsertableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Pmc_dbDataSet = New pmc_loan_monitoring_system.pmc_dbDataSet()
         Me.User_tableTableAdapter = New pmc_loan_monitoring_system.pmc_dbDataSetTableAdapters.user_tableTableAdapter()
-        Me.lbluserid = New System.Windows.Forms.Label()
-        Me.btnchange = New Guna.UI2.WinForms.Guna2Button()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.Pmc_dbDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgusers, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UsertableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Pmc_dbDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label5
@@ -351,148 +350,6 @@ Partial Class usrctrlusermanagement
         Me.txtln.Size = New System.Drawing.Size(214, 28)
         Me.txtln.TabIndex = 2
         '
-        'Pmc_dbDataSet1
-        '
-        Me.Pmc_dbDataSet1.DataSetName = "pmc_dbDataSet"
-        Me.Pmc_dbDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'dgusers
-        '
-        Me.dgusers.AllowUserToAddRows = False
-        Me.dgusers.AllowUserToDeleteRows = False
-        Me.dgusers.AllowUserToResizeColumns = False
-        Me.dgusers.AllowUserToResizeRows = False
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.dgusers.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle11
-        Me.dgusers.AutoGenerateColumns = False
-        Me.dgusers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
-        Me.dgusers.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.dgusers.BackgroundColor = System.Drawing.Color.White
-        Me.dgusers.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.dgusers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle12.BackColor = System.Drawing.Color.MediumTurquoise
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgusers.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle12
-        Me.dgusers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgusers.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdDataGridViewTextBoxColumn, Me.FirstnameDataGridViewTextBoxColumn, Me.LastnameDataGridViewTextBoxColumn, Me.UsernameDataGridViewTextBoxColumn, Me.PasswordDataGridViewTextBoxColumn, Me.StatusDataGridViewTextBoxColumn, Me.TypeDataGridViewTextBoxColumn})
-        Me.dgusers.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.dgusers.DataSource = Me.UsertableBindingSource
-        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle13.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle13.Padding = New System.Windows.Forms.Padding(5)
-        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgusers.DefaultCellStyle = DataGridViewCellStyle13
-        Me.dgusers.DoubleBuffered = True
-        Me.dgusers.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
-        Me.dgusers.EnableHeadersVisualStyles = False
-        Me.dgusers.HeaderBgColor = System.Drawing.Color.MediumTurquoise
-        Me.dgusers.HeaderForeColor = System.Drawing.Color.Black
-        Me.dgusers.Location = New System.Drawing.Point(108, 432)
-        Me.dgusers.Name = "dgusers"
-        Me.dgusers.ReadOnly = True
-        Me.dgusers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgusers.RowHeadersDefaultCellStyle = DataGridViewCellStyle14
-        Me.dgusers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgusers.RowsDefaultCellStyle = DataGridViewCellStyle15
-        Me.dgusers.RowTemplate.Height = 24
-        Me.dgusers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgusers.Size = New System.Drawing.Size(1009, 290)
-        Me.dgusers.TabIndex = 29
-        '
-        'IdDataGridViewTextBoxColumn
-        '
-        Me.IdDataGridViewTextBoxColumn.DataPropertyName = "id"
-        Me.IdDataGridViewTextBoxColumn.HeaderText = "User ID"
-        Me.IdDataGridViewTextBoxColumn.Name = "IdDataGridViewTextBoxColumn"
-        Me.IdDataGridViewTextBoxColumn.ReadOnly = True
-        Me.IdDataGridViewTextBoxColumn.Width = 94
-        '
-        'FirstnameDataGridViewTextBoxColumn
-        '
-        Me.FirstnameDataGridViewTextBoxColumn.DataPropertyName = "firstname"
-        Me.FirstnameDataGridViewTextBoxColumn.HeaderText = "Firstname"
-        Me.FirstnameDataGridViewTextBoxColumn.Name = "FirstnameDataGridViewTextBoxColumn"
-        Me.FirstnameDataGridViewTextBoxColumn.ReadOnly = True
-        Me.FirstnameDataGridViewTextBoxColumn.Width = 110
-        '
-        'LastnameDataGridViewTextBoxColumn
-        '
-        Me.LastnameDataGridViewTextBoxColumn.DataPropertyName = "lastname"
-        Me.LastnameDataGridViewTextBoxColumn.HeaderText = "Lastname"
-        Me.LastnameDataGridViewTextBoxColumn.Name = "LastnameDataGridViewTextBoxColumn"
-        Me.LastnameDataGridViewTextBoxColumn.ReadOnly = True
-        Me.LastnameDataGridViewTextBoxColumn.Width = 112
-        '
-        'UsernameDataGridViewTextBoxColumn
-        '
-        Me.UsernameDataGridViewTextBoxColumn.DataPropertyName = "username"
-        Me.UsernameDataGridViewTextBoxColumn.HeaderText = "Username"
-        Me.UsernameDataGridViewTextBoxColumn.Name = "UsernameDataGridViewTextBoxColumn"
-        Me.UsernameDataGridViewTextBoxColumn.ReadOnly = True
-        Me.UsernameDataGridViewTextBoxColumn.Width = 116
-        '
-        'PasswordDataGridViewTextBoxColumn
-        '
-        Me.PasswordDataGridViewTextBoxColumn.DataPropertyName = "password"
-        Me.PasswordDataGridViewTextBoxColumn.HeaderText = "Password"
-        Me.PasswordDataGridViewTextBoxColumn.Name = "PasswordDataGridViewTextBoxColumn"
-        Me.PasswordDataGridViewTextBoxColumn.ReadOnly = True
-        Me.PasswordDataGridViewTextBoxColumn.Width = 112
-        '
-        'StatusDataGridViewTextBoxColumn
-        '
-        Me.StatusDataGridViewTextBoxColumn.DataPropertyName = "status"
-        Me.StatusDataGridViewTextBoxColumn.HeaderText = "Status"
-        Me.StatusDataGridViewTextBoxColumn.Name = "StatusDataGridViewTextBoxColumn"
-        Me.StatusDataGridViewTextBoxColumn.ReadOnly = True
-        Me.StatusDataGridViewTextBoxColumn.Width = 84
-        '
-        'TypeDataGridViewTextBoxColumn
-        '
-        Me.TypeDataGridViewTextBoxColumn.DataPropertyName = "type"
-        Me.TypeDataGridViewTextBoxColumn.HeaderText = "Type"
-        Me.TypeDataGridViewTextBoxColumn.Name = "TypeDataGridViewTextBoxColumn"
-        Me.TypeDataGridViewTextBoxColumn.ReadOnly = True
-        Me.TypeDataGridViewTextBoxColumn.Width = 75
-        '
-        'UsertableBindingSource
-        '
-        Me.UsertableBindingSource.DataMember = "user_table"
-        Me.UsertableBindingSource.DataSource = Me.Pmc_dbDataSet1
-        '
-        'User_tableTableAdapter
-        '
-        Me.User_tableTableAdapter.ClearBeforeFill = True
-        '
-        'lbluserid
-        '
-        Me.lbluserid.AutoSize = True
-        Me.lbluserid.Location = New System.Drawing.Point(79, 353)
-        Me.lbluserid.Name = "lbluserid"
-        Me.lbluserid.Size = New System.Drawing.Size(51, 17)
-        Me.lbluserid.TabIndex = 30
-        Me.lbluserid.Text = "Label8"
-        Me.lbluserid.Visible = False
-        '
         'btnchange
         '
         Me.btnchange.BorderRadius = 5
@@ -510,14 +367,165 @@ Partial Class usrctrlusermanagement
         Me.btnchange.TabIndex = 31
         Me.btnchange.Text = "Change"
         '
+        'lbluserid
+        '
+        Me.lbluserid.AutoSize = True
+        Me.lbluserid.Location = New System.Drawing.Point(79, 353)
+        Me.lbluserid.Name = "lbluserid"
+        Me.lbluserid.Size = New System.Drawing.Size(51, 17)
+        Me.lbluserid.TabIndex = 30
+        Me.lbluserid.Text = "Label8"
+        Me.lbluserid.Visible = False
+        '
+        'dgusers
+        '
+        Me.dgusers.AllowUserToAddRows = False
+        Me.dgusers.AllowUserToDeleteRows = False
+        Me.dgusers.AllowUserToResizeColumns = False
+        Me.dgusers.AllowUserToResizeRows = False
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(52, Byte), Integer))
+        Me.dgusers.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgusers.AutoGenerateColumns = False
+        Me.dgusers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgusers.BackgroundColor = System.Drawing.Color.White
+        Me.dgusers.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgusers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.dgusers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(18, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.2!)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.Padding = New System.Windows.Forms.Padding(0, 10, 0, 10)
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgusers.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.dgusers.ColumnHeadersHeight = 46
+        Me.dgusers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.dgusers.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdDataGridViewTextBoxColumn, Me.FirstnameDataGridViewTextBoxColumn, Me.LastnameDataGridViewTextBoxColumn, Me.UsernameDataGridViewTextBoxColumn, Me.PasswordDataGridViewTextBoxColumn, Me.StatusDataGridViewTextBoxColumn, Me.TypeDataGridViewTextBoxColumn})
+        Me.dgusers.DataSource = Me.UsertableBindingSource
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(41, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(114, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(119, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgusers.DefaultCellStyle = DataGridViewCellStyle3
+        Me.dgusers.EnableHeadersVisualStyles = False
+        Me.dgusers.GridColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.dgusers.Location = New System.Drawing.Point(30, 402)
+        Me.dgusers.MultiSelect = False
+        Me.dgusers.Name = "dgusers"
+        Me.dgusers.ReadOnly = True
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgusers.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
+        Me.dgusers.RowHeadersVisible = False
+        Me.dgusers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.dgusers.RowTemplate.Height = 24
+        Me.dgusers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgusers.Size = New System.Drawing.Size(1169, 332)
+        Me.dgusers.TabIndex = 32
+        Me.dgusers.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark
+        Me.dgusers.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(52, Byte), Integer))
+        Me.dgusers.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+        Me.dgusers.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
+        Me.dgusers.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
+        Me.dgusers.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
+        Me.dgusers.ThemeStyle.BackColor = System.Drawing.Color.White
+        Me.dgusers.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.dgusers.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(18, Byte), Integer))
+        Me.dgusers.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgusers.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        Me.dgusers.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
+        Me.dgusers.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.dgusers.ThemeStyle.HeaderStyle.Height = 46
+        Me.dgusers.ThemeStyle.ReadOnly = True
+        Me.dgusers.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.dgusers.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.dgusers.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        Me.dgusers.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.White
+        Me.dgusers.ThemeStyle.RowsStyle.Height = 24
+        Me.dgusers.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(114, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(119, Byte), Integer))
+        Me.dgusers.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White
+        '
+        'IdDataGridViewTextBoxColumn
+        '
+        Me.IdDataGridViewTextBoxColumn.DataPropertyName = "id"
+        Me.IdDataGridViewTextBoxColumn.HeaderText = "ID"
+        Me.IdDataGridViewTextBoxColumn.Name = "IdDataGridViewTextBoxColumn"
+        Me.IdDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'FirstnameDataGridViewTextBoxColumn
+        '
+        Me.FirstnameDataGridViewTextBoxColumn.DataPropertyName = "firstname"
+        Me.FirstnameDataGridViewTextBoxColumn.HeaderText = "First Name"
+        Me.FirstnameDataGridViewTextBoxColumn.Name = "FirstnameDataGridViewTextBoxColumn"
+        Me.FirstnameDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'LastnameDataGridViewTextBoxColumn
+        '
+        Me.LastnameDataGridViewTextBoxColumn.DataPropertyName = "lastname"
+        Me.LastnameDataGridViewTextBoxColumn.HeaderText = "Last Name"
+        Me.LastnameDataGridViewTextBoxColumn.Name = "LastnameDataGridViewTextBoxColumn"
+        Me.LastnameDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'UsernameDataGridViewTextBoxColumn
+        '
+        Me.UsernameDataGridViewTextBoxColumn.DataPropertyName = "username"
+        Me.UsernameDataGridViewTextBoxColumn.HeaderText = "Username"
+        Me.UsernameDataGridViewTextBoxColumn.Name = "UsernameDataGridViewTextBoxColumn"
+        Me.UsernameDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'PasswordDataGridViewTextBoxColumn
+        '
+        Me.PasswordDataGridViewTextBoxColumn.DataPropertyName = "password"
+        Me.PasswordDataGridViewTextBoxColumn.HeaderText = "Password"
+        Me.PasswordDataGridViewTextBoxColumn.Name = "PasswordDataGridViewTextBoxColumn"
+        Me.PasswordDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'StatusDataGridViewTextBoxColumn
+        '
+        Me.StatusDataGridViewTextBoxColumn.DataPropertyName = "status"
+        Me.StatusDataGridViewTextBoxColumn.HeaderText = "Status"
+        Me.StatusDataGridViewTextBoxColumn.Name = "StatusDataGridViewTextBoxColumn"
+        Me.StatusDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'TypeDataGridViewTextBoxColumn
+        '
+        Me.TypeDataGridViewTextBoxColumn.DataPropertyName = "type"
+        Me.TypeDataGridViewTextBoxColumn.HeaderText = "Type"
+        Me.TypeDataGridViewTextBoxColumn.Name = "TypeDataGridViewTextBoxColumn"
+        Me.TypeDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'UsertableBindingSource
+        '
+        Me.UsertableBindingSource.DataMember = "user_table"
+        Me.UsertableBindingSource.DataSource = Me.Pmc_dbDataSet
+        '
+        'Pmc_dbDataSet
+        '
+        Me.Pmc_dbDataSet.DataSetName = "pmc_dbDataSet"
+        Me.Pmc_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'User_tableTableAdapter
+        '
+        Me.User_tableTableAdapter.ClearBeforeFill = True
+        '
         'usrctrlusermanagement
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.GhostWhite
+        Me.Controls.Add(Me.dgusers)
         Me.Controls.Add(Me.btnchange)
         Me.Controls.Add(Me.lbluserid)
-        Me.Controls.Add(Me.dgusers)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.txtln)
         Me.Controls.Add(Me.Label6)
@@ -536,9 +544,9 @@ Partial Class usrctrlusermanagement
         Me.Name = "usrctrlusermanagement"
         Me.Size = New System.Drawing.Size(1228, 754)
         Me.GroupBox1.ResumeLayout(False)
-        CType(Me.Pmc_dbDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgusers, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.UsertableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Pmc_dbDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -563,11 +571,13 @@ Partial Class usrctrlusermanagement
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents txtln As System.Windows.Forms.TextBox
     Friend WithEvents btn2 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Pmc_dbDataSet1 As pmc_loan_monitoring_system.pmc_dbDataSet
-    Friend WithEvents dgusers As Bunifu.Framework.UI.BunifuCustomDataGrid
-    Friend WithEvents UsertableBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents User_tableTableAdapter As pmc_loan_monitoring_system.pmc_dbDataSetTableAdapters.user_tableTableAdapter
+    Friend WithEvents btnchangepass As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnchange As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents lbluserid As System.Windows.Forms.Label
+    Friend WithEvents dgusers As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents UsertableBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents Pmc_dbDataSet As pmc_loan_monitoring_system.pmc_dbDataSet
+    Friend WithEvents User_tableTableAdapter As pmc_loan_monitoring_system.pmc_dbDataSetTableAdapters.user_tableTableAdapter
     Friend WithEvents IdDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents FirstnameDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents LastnameDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -575,7 +585,5 @@ Partial Class usrctrlusermanagement
     Friend WithEvents PasswordDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents StatusDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TypeDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents btnchangepass As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents btnchange As Guna.UI2.WinForms.Guna2Button
 
 End Class

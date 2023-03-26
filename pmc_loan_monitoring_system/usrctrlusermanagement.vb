@@ -1,7 +1,7 @@
 ﻿Public Class usrctrlusermanagement
     'refresh the datagridview
     Sub dgrefresh()
-        Me.User_tableTableAdapter.Fill(Me.Pmc_dbDataSet1.user_table)
+        Me.User_tableTableAdapter.Fill(Me.Pmc_dbDataSet.user_table)
     End Sub
 
     'enables disabled fields
@@ -24,7 +24,7 @@
         txtln.Text = ""
         cbout.Text = ""
         cbostatus.Text = ""
-
+        btnchangepass.Enabled = False
     End Sub
 
     'disabled fields
@@ -126,34 +126,6 @@
         btnclearuser.Enabled = True
     End Sub
 
-    Private Sub dgusers_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgusers.CellClick
-
-        If e.RowIndex >= 0 Then
-            Dim row As DataGridViewRow
-            row = dgusers.Rows(e.RowIndex)
-            lbluserid.Text = row.Cells(0).Value
-            txtreguser.Text = row.Cells(3).Value
-            txtregpass.Text = ""
-            txtconfirmpass.Text = ""
-            txtfn.Text = row.Cells(1).Value
-            txtln.Text = row.Cells(2).Value
-            cbout.Text = row.Cells(6).Value
-            cbostatus.Text = row.Cells(5).Value
-
-            enableFields()
-            txtreguser.Enabled = False
-            txtregpass.Enabled = False
-            txtconfirmpass.Enabled = False
-            cbout.Enabled = False
-
-            btnupdateuser.Enabled = True
-            btnclearuser.Enabled = True
-            btnadduser.Enabled = False
-            btn2.Enabled = False
-            btnchange.Enabled = True
-
-        End If
-    End Sub
 
 
     Private Sub btnclearuser_Click(sender As Object, e As EventArgs) Handles btnclearuser.Click
@@ -309,5 +281,32 @@
         btnupdateuser.Enabled = False
 
         btnchange.Enabled = False
+    End Sub
+
+    Private Sub dgusers_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgusers.CellClick
+        If e.RowIndex >= 0 Then
+            Dim row As DataGridViewRow
+            row = dgusers.Rows(e.RowIndex)
+            lbluserid.Text = row.Cells(0).Value
+            txtreguser.Text = row.Cells(3).Value
+            txtregpass.Text = ""
+            txtconfirmpass.Text = ""
+            txtfn.Text = row.Cells(1).Value
+            txtln.Text = row.Cells(2).Value
+            cbout.Text = row.Cells(6).Value
+            cbostatus.Text = row.Cells(5).Value
+
+            enableFields()
+            txtreguser.Enabled = False
+            txtregpass.Enabled = False
+            txtconfirmpass.Enabled = False
+            cbout.Enabled = False
+
+            btnupdateuser.Enabled = True
+            btnclearuser.Enabled = True
+            btnadduser.Enabled = False
+            btn2.Enabled = False
+            btnchange.Enabled = True
+        End If
     End Sub
 End Class

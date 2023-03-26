@@ -16,3 +16,18 @@ C:\Users\michelle\OneDrive\Desktop\pmc_loan_monitoring_system\pmc_loan_monitorin
 C:\Users\michelle\OneDrive\Desktop\pmc_loan_monitoring_system\pmc_loan_monitoring_system\obj\Debug\pmc_loan_monitoring_system.usrctrltransactions.resources
 C:\Users\michelle\OneDrive\Desktop\pmc_loan_monitoring_system\pmc_loan_monitoring_system\bin\Debug\Guna.UI.dll
 C:\Users\michelle\OneDrive\Desktop\pmc_loan_monitoring_system\pmc_loan_monitoring_system\obj\Debug\pmc_loan_monitoring_system.vbprojResolveAssemblyReference.cache
+C:\Users\michelle\OneDrive\Desktop\AbbyFiles\Visual Basic Folders\PMC_latest\pmc_loan_monitoring\pmc_loan_monitoring_system\bin\Debug\pmc_loan_monitoring_system.exe.config
+C:\Users\michelle\OneDrive\Desktop\AbbyFiles\Visual Basic Folders\PMC_latest\pmc_loan_monitoring\pmc_loan_monitoring_system\obj\Debug\pmc_loan_monitoring_system.exe
+C:\Users\michelle\OneDrive\Desktop\AbbyFiles\Visual Basic Folders\PMC_latest\pmc_loan_monitoring\pmc_loan_monitoring_system\obj\Debug\pmc_loan_monitoring_system.xml
+C:\Users\michelle\OneDrive\Desktop\AbbyFiles\Visual Basic Folders\PMC_latest\pmc_loan_monitoring\pmc_loan_monitoring_system\obj\Debug\pmc_loan_monitoring_system.pdb
+C:\Users\michelle\OneDrive\Desktop\AbbyFiles\Visual Basic Folders\PMC_latest\pmc_loan_monitoring\pmc_loan_monitoring_system\bin\Debug\pmc_loan_monitoring_system.exe
+C:\Users\michelle\OneDrive\Desktop\AbbyFiles\Visual Basic Folders\PMC_latest\pmc_loan_monitoring\pmc_loan_monitoring_system\bin\Debug\pmc_loan_monitoring_system.pdb
+C:\Users\michelle\OneDrive\Desktop\AbbyFiles\Visual Basic Folders\PMC_latest\pmc_loan_monitoring\pmc_loan_monitoring_system\bin\Debug\pmc_loan_monitoring_system.xml
+C:\Users\michelle\OneDrive\Desktop\AbbyFiles\Visual Basic Folders\PMC_latest\pmc_loan_monitoring\pmc_loan_monitoring_system\obj\Debug\pmc_loan_monitoring_system.vbprojResolveAssemblyReference.cache
+C:\Users\michelle\OneDrive\Desktop\AbbyFiles\Visual Basic Folders\PMC_latest\pmc_loan_monitoring\pmc_loan_monitoring_system\obj\Debug\pmc_loan_monitoring_system.frmmain.resources
+C:\Users\michelle\OneDrive\Desktop\AbbyFiles\Visual Basic Folders\PMC_latest\pmc_loan_monitoring\pmc_loan_monitoring_system\obj\Debug\pmc_loan_monitoring_system.frmlogin.resources
+C:\Users\michelle\OneDrive\Desktop\AbbyFiles\Visual Basic Folders\PMC_latest\pmc_loan_monitoring\pmc_loan_monitoring_system\obj\Debug\pmc_loan_monitoring_system.Resources.resources
+C:\Users\michelle\OneDrive\Desktop\AbbyFiles\Visual Basic Folders\PMC_latest\pmc_loan_monitoring\pmc_loan_monitoring_system\obj\Debug\pmc_loan_monitoring_system.usrctrldashboard.resources
+C:\Users\michelle\OneDrive\Desktop\AbbyFiles\Visual Basic Folders\PMC_latest\pmc_loan_monitoring\pmc_loan_monitoring_system\obj\Debug\pmc_loan_monitoring_system.usrctrltransactions.resources
+C:\Users\michelle\OneDrive\Desktop\AbbyFiles\Visual Basic Folders\PMC_latest\pmc_loan_monitoring\pmc_loan_monitoring_system\obj\Debug\pmc_loan_monitoring_system.usrctrlusermanagement.resources
+C:\Users\michelle\OneDrive\Desktop\AbbyFiles\Visual Basic Folders\PMC_latest\pmc_loan_monitoring\pmc_loan_monitoring_system\obj\Debug\pmc_loan_monitoring_system.vbproj.GenerateResource.Cache

@@ -1513,8 +1513,8 @@ Partial Public Class pmc_dbDataSet
             Me.columnstatus.MaxLength = 45
             Me.columntype.AllowDBNull = false
             Me.columntype.MaxLength = 45
-            Me.columnfirstname.MaxLength = 45
-            Me.columnlastname.MaxLength = 45
+            Me.columnfirstname.MaxLength = 65
+            Me.columnlastname.MaxLength = 65
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -5586,7 +5586,8 @@ Namespace pmc_dbDataSetTableAdapters
             Me._commandCollection = New Global.MySql.Data.MySqlClient.MySqlCommand(0) {}
             Me._commandCollection(0) = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT id, username, password, status, type, firstname, lastname FROM user_table"
+            Me._commandCollection(0).CommandText = "SELECT `id`, `username`, `password`, `status`, `type`, `firstname`, `lastname` FR"& _ 
+                "OM `user_table`"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
