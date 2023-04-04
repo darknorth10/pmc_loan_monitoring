@@ -309,4 +309,8 @@
             btnchange.Enabled = True
         End If
     End Sub
+
+    Private Sub dgusers_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgusers.CellContentClick
+
+    End Sub
 End Class

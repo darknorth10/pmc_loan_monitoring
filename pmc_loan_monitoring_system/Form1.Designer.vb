@@ -23,6 +23,7 @@ Partial Class frmmain
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
+        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.btnlogout = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button6 = New Guna.UI2.WinForms.Guna2Button()
@@ -39,7 +40,6 @@ Partial Class frmmain
         Me.lbltext = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.pnlmain = New System.Windows.Forms.Panel()
         Me.Pmc_dbDataSet1 = New pmc_loan_monitoring_system.pmc_dbDataSet()
-        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2GradientPanel1.SuspendLayout()
         CType(Me.Guna2CirclePictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -69,6 +69,23 @@ Partial Class frmmain
         Me.Guna2GradientPanel1.ShadowDecoration.Parent = Me.Guna2GradientPanel1
         Me.Guna2GradientPanel1.Size = New System.Drawing.Size(279, 822)
         Me.Guna2GradientPanel1.TabIndex = 0
+        '
+        'Guna2Button3
+        '
+        Me.Guna2Button3.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Button3.CheckedState.Parent = Me.Guna2Button3
+        Me.Guna2Button3.CustomImages.Parent = Me.Guna2Button3
+        Me.Guna2Button3.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2Button3.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button3.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Guna2Button3.HoverState.Parent = Me.Guna2Button3
+        Me.Guna2Button3.Location = New System.Drawing.Point(1, 617)
+        Me.Guna2Button3.Name = "Guna2Button3"
+        Me.Guna2Button3.PressedColor = System.Drawing.Color.MediumAquamarine
+        Me.Guna2Button3.ShadowDecoration.Parent = Me.Guna2Button3
+        Me.Guna2Button3.Size = New System.Drawing.Size(279, 45)
+        Me.Guna2Button3.TabIndex = 17
+        Me.Guna2Button3.Text = "Printable Forms"
         '
         'btnlogout
         '
@@ -324,23 +341,6 @@ Partial Class frmmain
         '
         Me.Pmc_dbDataSet1.DataSetName = "pmc_dbDataSet"
         Me.Pmc_dbDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'Guna2Button3
-        '
-        Me.Guna2Button3.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button3.CheckedState.Parent = Me.Guna2Button3
-        Me.Guna2Button3.CustomImages.Parent = Me.Guna2Button3
-        Me.Guna2Button3.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2Button3.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button3.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Guna2Button3.HoverState.Parent = Me.Guna2Button3
-        Me.Guna2Button3.Location = New System.Drawing.Point(1, 617)
-        Me.Guna2Button3.Name = "Guna2Button3"
-        Me.Guna2Button3.PressedColor = System.Drawing.Color.MediumAquamarine
-        Me.Guna2Button3.ShadowDecoration.Parent = Me.Guna2Button3
-        Me.Guna2Button3.Size = New System.Drawing.Size(279, 45)
-        Me.Guna2Button3.TabIndex = 17
-        Me.Guna2Button3.Text = "Printable Forms"
         '
         'frmmain
         '

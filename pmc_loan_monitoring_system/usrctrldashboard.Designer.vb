@@ -22,37 +22,47 @@ Partial Class usrctrldashboard
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Me.components = New System.ComponentModel.Container()
         Me.BunifuCards1 = New Bunifu.Framework.UI.BunifuCards()
         Me.lblmembers = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BunifuCards4 = New Bunifu.Framework.UI.BunifuCards()
         Me.BunifuCustomLabel6 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel7 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.BunifuCards3 = New Bunifu.Framework.UI.BunifuCards()
         Me.BunifuCustomLabel4 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel5 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.BunifuCards2 = New Bunifu.Framework.UI.BunifuCards()
         Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.BunifuCards5 = New Bunifu.Framework.UI.BunifuCards()
-        Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.dg1 = New System.Windows.Forms.DataGridView()
+        Me.Pmc_dbDataSet = New pmc_loan_monitoring_system.pmc_dbDataSet()
+        Me.UsertableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.User_tableTableAdapter = New pmc_loan_monitoring_system.pmc_dbDataSetTableAdapters.user_tableTableAdapter()
+        Me.IdDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UsernameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PasswordDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.StatusDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TypeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FirstnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LastnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BunifuCards1.SuspendLayout()
-        Me.BunifuCards4.SuspendLayout()
-        Me.BunifuCards3.SuspendLayout()
-        Me.BunifuCards2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BunifuCards4.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BunifuCards3.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BunifuCards2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BunifuCards5.SuspendLayout()
-        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dg1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Pmc_dbDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.UsertableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuCards1
@@ -98,6 +108,16 @@ Partial Class usrctrldashboard
         Me.BunifuCustomLabel1.TabIndex = 2
         Me.BunifuCustomLabel1.Text = "Members"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.pmc_loan_monitoring_system.My.Resources.Resources.group
+        Me.PictureBox1.Location = New System.Drawing.Point(25, 13)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(76, 41)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
+        '
         'BunifuCards4
         '
         Me.BunifuCards4.BackColor = System.Drawing.Color.White
@@ -140,6 +160,16 @@ Partial Class usrctrldashboard
         Me.BunifuCustomLabel7.Size = New System.Drawing.Size(97, 20)
         Me.BunifuCustomLabel7.TabIndex = 8
         Me.BunifuCustomLabel7.Text = "Transactions"
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.pmc_loan_monitoring_system.My.Resources.Resources.transaction
+        Me.PictureBox4.Location = New System.Drawing.Point(4, 11)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(89, 43)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox4.TabIndex = 7
+        Me.PictureBox4.TabStop = False
         '
         'BunifuCards3
         '
@@ -184,6 +214,16 @@ Partial Class usrctrldashboard
         Me.BunifuCustomLabel5.TabIndex = 8
         Me.BunifuCustomLabel5.Text = "Rice"
         '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.pmc_loan_monitoring_system.My.Resources.Resources.wheat
+        Me.PictureBox3.Location = New System.Drawing.Point(22, 15)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(76, 41)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox3.TabIndex = 7
+        Me.PictureBox3.TabStop = False
+        '
         'BunifuCards2
         '
         Me.BunifuCards2.BackColor = System.Drawing.Color.White
@@ -227,36 +267,6 @@ Partial Class usrctrldashboard
         Me.BunifuCustomLabel3.TabIndex = 5
         Me.BunifuCustomLabel3.Text = "Total Cash Loan"
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.pmc_loan_monitoring_system.My.Resources.Resources.group
-        Me.PictureBox1.Location = New System.Drawing.Point(25, 13)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(76, 41)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = Global.pmc_loan_monitoring_system.My.Resources.Resources.transaction
-        Me.PictureBox4.Location = New System.Drawing.Point(4, 11)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(89, 43)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox4.TabIndex = 7
-        Me.PictureBox4.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.pmc_loan_monitoring_system.My.Resources.Resources.wheat
-        Me.PictureBox3.Location = New System.Drawing.Point(22, 15)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(76, 41)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox3.TabIndex = 7
-        Me.PictureBox3.TabStop = False
-        '
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.pmc_loan_monitoring_system.My.Resources.Resources.loan
@@ -273,7 +283,7 @@ Partial Class usrctrldashboard
         Me.BunifuCards5.BorderRadius = 5
         Me.BunifuCards5.BottomSahddow = True
         Me.BunifuCards5.color = System.Drawing.Color.Tomato
-        Me.BunifuCards5.Controls.Add(Me.Chart1)
+        Me.BunifuCards5.Controls.Add(Me.dg1)
         Me.BunifuCards5.LeftSahddow = False
         Me.BunifuCards5.Location = New System.Drawing.Point(49, 256)
         Me.BunifuCards5.Name = "BunifuCards5"
@@ -282,21 +292,73 @@ Partial Class usrctrldashboard
         Me.BunifuCards5.Size = New System.Drawing.Size(1139, 417)
         Me.BunifuCards5.TabIndex = 7
         '
-        'Chart1
+        'dg1
         '
-        ChartArea1.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend1)
-        Me.Chart1.Location = New System.Drawing.Point(0, 3)
-        Me.Chart1.Name = "Chart1"
-        Series1.ChartArea = "ChartArea1"
-        Series1.Legend = "Legend1"
-        Series1.Name = "Series1"
-        Me.Chart1.Series.Add(Series1)
-        Me.Chart1.Size = New System.Drawing.Size(1136, 414)
-        Me.Chart1.TabIndex = 1
-        Me.Chart1.Text = "Chart1"
+        Me.dg1.AutoGenerateColumns = False
+        Me.dg1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dg1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdDataGridViewTextBoxColumn, Me.UsernameDataGridViewTextBoxColumn, Me.PasswordDataGridViewTextBoxColumn, Me.StatusDataGridViewTextBoxColumn, Me.TypeDataGridViewTextBoxColumn, Me.FirstnameDataGridViewTextBoxColumn, Me.LastnameDataGridViewTextBoxColumn})
+        Me.dg1.DataSource = Me.UsertableBindingSource
+        Me.dg1.Location = New System.Drawing.Point(116, 15)
+        Me.dg1.Name = "dg1"
+        Me.dg1.RowTemplate.Height = 24
+        Me.dg1.Size = New System.Drawing.Size(907, 386)
+        Me.dg1.TabIndex = 19
+        '
+        'Pmc_dbDataSet
+        '
+        Me.Pmc_dbDataSet.DataSetName = "pmc_dbDataSet"
+        Me.Pmc_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'UsertableBindingSource
+        '
+        Me.UsertableBindingSource.DataMember = "user_table"
+        Me.UsertableBindingSource.DataSource = Me.Pmc_dbDataSet
+        '
+        'User_tableTableAdapter
+        '
+        Me.User_tableTableAdapter.ClearBeforeFill = True
+        '
+        'IdDataGridViewTextBoxColumn
+        '
+        Me.IdDataGridViewTextBoxColumn.DataPropertyName = "id"
+        Me.IdDataGridViewTextBoxColumn.HeaderText = "id"
+        Me.IdDataGridViewTextBoxColumn.Name = "IdDataGridViewTextBoxColumn"
+        '
+        'UsernameDataGridViewTextBoxColumn
+        '
+        Me.UsernameDataGridViewTextBoxColumn.DataPropertyName = "username"
+        Me.UsernameDataGridViewTextBoxColumn.HeaderText = "username"
+        Me.UsernameDataGridViewTextBoxColumn.Name = "UsernameDataGridViewTextBoxColumn"
+        '
+        'PasswordDataGridViewTextBoxColumn
+        '
+        Me.PasswordDataGridViewTextBoxColumn.DataPropertyName = "password"
+        Me.PasswordDataGridViewTextBoxColumn.HeaderText = "password"
+        Me.PasswordDataGridViewTextBoxColumn.Name = "PasswordDataGridViewTextBoxColumn"
+        '
+        'StatusDataGridViewTextBoxColumn
+        '
+        Me.StatusDataGridViewTextBoxColumn.DataPropertyName = "status"
+        Me.StatusDataGridViewTextBoxColumn.HeaderText = "status"
+        Me.StatusDataGridViewTextBoxColumn.Name = "StatusDataGridViewTextBoxColumn"
+        '
+        'TypeDataGridViewTextBoxColumn
+        '
+        Me.TypeDataGridViewTextBoxColumn.DataPropertyName = "type"
+        Me.TypeDataGridViewTextBoxColumn.HeaderText = "type"
+        Me.TypeDataGridViewTextBoxColumn.Name = "TypeDataGridViewTextBoxColumn"
+        '
+        'FirstnameDataGridViewTextBoxColumn
+        '
+        Me.FirstnameDataGridViewTextBoxColumn.DataPropertyName = "firstname"
+        Me.FirstnameDataGridViewTextBoxColumn.HeaderText = "firstname"
+        Me.FirstnameDataGridViewTextBoxColumn.Name = "FirstnameDataGridViewTextBoxColumn"
+        '
+        'LastnameDataGridViewTextBoxColumn
+        '
+        Me.LastnameDataGridViewTextBoxColumn.DataPropertyName = "lastname"
+        Me.LastnameDataGridViewTextBoxColumn.HeaderText = "lastname"
+        Me.LastnameDataGridViewTextBoxColumn.Name = "LastnameDataGridViewTextBoxColumn"
         '
         'usrctrldashboard
         '
@@ -311,18 +373,20 @@ Partial Class usrctrldashboard
         Me.Size = New System.Drawing.Size(1228, 754)
         Me.BunifuCards1.ResumeLayout(False)
         Me.BunifuCards1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.BunifuCards4.ResumeLayout(False)
         Me.BunifuCards4.PerformLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.BunifuCards3.ResumeLayout(False)
         Me.BunifuCards3.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.BunifuCards2.ResumeLayout(False)
         Me.BunifuCards2.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.BunifuCards5.ResumeLayout(False)
-        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dg1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Pmc_dbDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.UsertableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -343,6 +407,16 @@ Partial Class usrctrldashboard
     Friend WithEvents BunifuCustomLabel3 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents BunifuCards5 As Bunifu.Framework.UI.BunifuCards
-    Friend WithEvents Chart1 As System.Windows.Forms.DataVisualization.Charting.Chart
+    Friend WithEvents dg1 As System.Windows.Forms.DataGridView
+    Friend WithEvents IdDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents UsernameDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents PasswordDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents StatusDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents TypeDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents FirstnameDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents LastnameDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents UsertableBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents Pmc_dbDataSet As pmc_loan_monitoring_system.pmc_dbDataSet
+    Friend WithEvents User_tableTableAdapter As pmc_loan_monitoring_system.pmc_dbDataSetTableAdapters.user_tableTableAdapter
 
 End Class
